@@ -215,6 +215,7 @@ body
 /*Desde aqui comienzo a experimentar con el main */
 .miMain
 {
+    background-color: #fff; /* para identificar el main */
     position: sticky;
     margin-left: 90px; /* Ajuste para dejar espacio a la barra lateral 90px*/
     border-radius: 2rem;
