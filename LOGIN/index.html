@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login y Registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box collapsed" id="loginBox">
+            <span class="borderLine"></span>
+            <form id="loginForm">
+                <h2>Iniciar Sesión</h2>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Nombre de usuario</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" required="required">
+                    <span>Contraseña</span>
+                    <i></i>
+                </div>
+                <div class="links">
+                    <a href="#" id="showForgot">Olvidé mi contraseña</a>
+                    <a href="#" id="showRegister">Regístrate</a>
+                </div>
+                <input type="submit" value="Iniciar sesión">
+            </form>
+        </div>
+
+        <div class="box hidden expanded" id="registerBox">
+            <span class="borderLine"></span>
+            <form id="registerForm">
+                <h2>Registrarse</h2>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Nombre de usuario</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="email" required="required">
+                    <span>Email</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" required="required">
+                    <span>Contraseña</span>
+                    <i></i>
+                </div>
+                <div class="links">
+                    <a href="#" id="showLogin">Ya tengo una cuenta</a>
+                </div>
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+
+        <div class="box hidden forgotExpanded" id="forgotBox">
+            <span class="borderLine"></span>
+            <form id="forgotForm">
+                <h2>Recuperar Contraseña</h2>
+                <div class="inputBox">
+                    <input type="email" required="required">
+                    <span>Email</span>
+                    <i></i>
+                </div>
+                <div class="links">
+                    <a href="#" id="showLoginFromForgot">Iniciar Sesión</a>
+                </div>
+                <input type="submit" value="Recuperar">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showRegister').addEventListener('click', function() {
+            document.getElementById('loginBox').classList.add('hidden');
+            document.getElementById('registerBox').classList.remove('hidden');
+            document.getElementById('forgotBox').classList.add('hidden');
+        });
+
+        document.getElementById('showLogin').addEventListener('click', function() {
+            document.getElementById('registerBox').classList.add('hidden');
+            document.getElementById('loginBox').classList.remove('hidden');
+            document.getElementById('forgotBox').classList.add('hidden');
+        });
+
+        document.getElementById('showForgot').addEventListener('click', function() {
+            document.getElementById('loginBox').classList.add('hidden');
+            document.getElementById('registerBox').classList.add('hidden');
+            document.getElementById('forgotBox').classList.remove('hidden');
+        });
+
+        document.getElementById('showLoginFromForgot').addEventListener('click', function() {
+            document.getElementById('forgotBox').classList.add('hidden');
+            document.getElementById('loginBox').classList.remove('hidden');
+            document.getElementById('registerBox').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
