@@ -215,7 +215,7 @@ body
 /*Desde aqui comienzo a experimentar con el main */
 .miMain
 {
-    background-color: #fff; /* para identificar el main */
+    /*background-color: #fff;  para identificar el main */
     position: sticky;
     margin-left: 90px; /* Ajuste para dejar espacio a la barra lateral 90px*/
     border-radius: 2rem;
@@ -227,17 +227,20 @@ body
 }
 .products
 {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 .product
 {
-    background: #222;
+    /* background: transparent; */
+    /* height: 100%; */
     border-radius: 1rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .pImagen
 {
@@ -246,7 +249,7 @@ body
 }
 .pDetalles
 {
-    background-color: #8e45ce;
+    background-color: #26292e;
     color: #fff;
     padding: 0.5rem;
     border-radius: 0 0 1rem 1rem;
@@ -267,8 +270,8 @@ body
 .pAgregar
 {
     border: 0;
-    background-color: #fff;
-    color: #8e45ce;
+    background-color: #70aa1d;
+    color: #26292e;
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     border-radius: 1rem;
@@ -279,6 +282,6 @@ body
 }
 .pAgregar:hover
 {
-    background-color: #8e45ce;
+    background-color: #26292e;
     color: #fff;
 }
