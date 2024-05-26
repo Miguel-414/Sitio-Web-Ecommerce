@@ -14,12 +14,12 @@
             <form id="loginForm">
                 <h2>Iniciar Sesión</h2>
                 <div class="inputBox">
-                    <input type="text" required="required">
+                    <input type="text" required="required" id="inputInicioSesion1">
                     <span>Nombre de usuario</span>
                     <i></i>
                 </div>
                 <div class="inputBox">
-                    <input type="password" required="required">
+                    <input type="password" required="required" id="inputInicioSesion2">
                     <span>Contraseña</span>
                     <i></i>
                 </div>
@@ -27,7 +27,8 @@
                     <a href="#" id="showForgot">Olvidé mi contraseña</a>
                     <a href="#" id="showRegister">Regístrate</a>
                 </div>
-                <input type="submit" value="Iniciar sesión">
+                <input type="submit" value="Iniciar sesión" id="init"> 
+                <!-- este es mi boton -->
             </form>
         </div>
 
@@ -53,7 +54,7 @@
                 <div class="links">
                     <a href="#" id="showLogin">Ya tengo una cuenta</a>
                 </div>
-                <input type="submit" value="Registrarse">
+                 <input type="submit" value="Registrarse"> 
             </form>
         </div>
 
@@ -74,6 +75,7 @@
         </div>
     </div>
 
+    <script src='main.js'></script>
     <script>
         document.getElementById('showRegister').addEventListener('click', function() {
             document.getElementById('loginBox').classList.add('hidden');
@@ -99,5 +101,6 @@
             document.getElementById('registerBox').classList.add('hidden');
         });
     </script>
+    
 </body>
 </html>

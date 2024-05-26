@@ -21,7 +21,7 @@
             </li>
             <div class="Menulist">
                 <li style="--bg:#f44336;" class="active">
-                    <a href="../INICIO_CLIENTE/">
+                    <a href="../INICIO_ADMIN/index.html">
                         <div class="icon"><ion-icon name="planet-outline"></ion-icon></div>
                         <div class="text">Home</div>
                     </a>
@@ -45,7 +45,7 @@
                     </a>
                 </li>
                 <li style="--bg:#b145e9;">
-                    <a href="../CARRITO/index.html">
+                    <a href="#">
                         <div class="icon"><ion-icon name="cart-outline"></ion-icon></div>
                         <div class="text">Order</div>
                     </a>
@@ -77,70 +77,71 @@
             </div>
         </ul>
     </div>
-
+<div>c
     <main class="miMain">
-        <div class="products">
-            <div class="product">
-                <video muted autoplay loop width="100%">
-                    <source src="https://static.moewalls.com/videos/preview/2024/autumn-tree-temple-ghost-of-tsushima-preview.mp4" type="video/mp4" class="pImagen">
-                </video>
-                <div class="pDetalles">
-                    <h3 class="pTitulo">Autumn Tree Temple Ghost Of Tsushima Live Wallpaper</h3>
-                    <p class="pPrecio">$3.500</p>
-                    <button class="pAgregar">Agregar</button>
+        <div class="contenedor-carrito">
+            <p class="carrito-vacio">Tu carrito esta vacio. <ion-icon name="sad-outline"></ion-icon></p>
+            <div class="carrito-productos">
+                <div class="carrito-producto">
+                    <img src="img1.png" alt="" class="carrito-producto-imagen">
+                    <div class="carrito-producto-titulo">
+                        <small>Titulo</small>
+                        <p>Autumn Tree Temple Ghost Of Tsushima Live Wallpaper</p>
+                    </div>
+                    <div class="carrito-producto-cantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carrito-producto-precio">
+                        <small>Precio</small>
+                        <p>$3.500</p>
+                    </div>
+                    <div class="carrito-producto-subtotal">
+                        <small>Subtotal</small>
+                        <p>$3.500</p>
+                    </div>
+                    <button class="carrito-producto-eliminar"><ion-icon name="trash-outline"></ion-icon></button>
                 </div>
-            </div>
-            <div class="product">
-                <video muted autoplay loop width="100%">
-                    <source src="https://static.moewalls.com/videos/preview/2024/particle-balls-preview.mp4" type="video/mp4" class="pImagen">
-                </video>
-                <div class="pDetalles">
-                    <h3 class="pTitulo">Particle Balls Live Wallpaper</h3>
-                    <p class="pPrecio">$2.000</p>
-                    <button class="pAgregar">Agregar</button>
-                </div>
-            </div>
-            <div class="product">
-                <video muted autoplay loop width="100%">
-                    <source src="https://static.moewalls.com/videos/preview/2024/rengoku-flame-breathing-kimetsu-no-yaiba-preview.mp4" type="video/mp4" class="pImagen">
-                </video>
-                <div class="pDetalles">
-                    <h3 class="pTitulo">Rengoku Flame Breathing Kimetsu No Yaiba Live Wallpaper</h3>
-                    <p class="pPrecio">$4.000</p>
-                    <button class="pAgregar">Agregar</button>
-                </div>
-            </div>
-            <div class="product">
-                <video muted autoplay loop width="100%">
-                    <source src="https://static.moewalls.com/videos/preview/2024/crownless-vs-rover-wuthering-waves-preview.mp4" type="video/mp4" class="pImagen">
-                </video>
-                <div class="pDetalles">
-                    <h3 class="pTitulo">Crownless VS Rover Wuthering Waves Live Wallpaper</h3>
-                    <p class="pPrecio">$3.800</p>
-                    <button class="pAgregar">Agregar</button>
-                </div>
-            </div>
-            <div class="product">
-                <video muted autoplay loop width="100%">
-                    <source src="https://static.moewalls.com/videos/preview/2024/sung-jin-woo-solo-leveling-preview.mp4" type="video/mp4" class="pImagen">
-                </video>
-                <div class="pDetalles">
-                    <h3 class="pTitulo">Sung Jin Woo Solo Leveling Live Wallpaper</h3>
-                    <p class="pPrecio">$4.200</p>
-                    <button class="pAgregar">Agregar</button>
-                </div>
-            </div>
-            <div class="product">
-                <video muted autoplay loop width="100%">
-                    <source src="https://static.moewalls.com/videos/preview/2024/sousou-no-frieren-preview.mp4" type="video/mp4" class="pImagen">
-                </video>
-                <div class="pDetalles">
-                    <h3 class="pTitulo">Sousou No Frieren Live Wallpaper</h3>
-                    <p class="pPrecio">$3.700</p>
-                    <button class="pAgregar">Agregar</button>
-                </div>
+                <div class="carrito-producto">
+                    <img src="img2.png" alt="" class="carrito-producto-imagen">
+                    <div class="carrito-producto-titulo">
+                        <small>Titulo</small>
+                        <p>Sung Jin Woo Solo Leveling Live Wallpaper</p>
+                    </div>
+                    <div class="carrito-producto-cantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carrito-producto-precio">
+                        <small>Precio</small>
+                        <p>$4.200</p>
+                    </div>
+                    <div class="carrito-producto-subtotal">
+                        <small>Subtotal</small>
+                        <p>$4.200</p>
+                    </div>
+                <button class="carrito-producto-eliminar"><ion-icon name="trash-outline"></ion-icon></button>
             </div>
         </div>
+
+    
+
+        <div class="carrito-acciones disabled">
+            <div class="carrito-acciones-izquierda">
+                <button class="carrito-acciones-vaciar">Vaciar Carrito</button>
+            </div>
+            <div class="carrito-acciones-derecha">
+                <div class="carrito-acciones-total">
+                    <p>Total:</p>
+                    <p id="total">$7.700</p>
+                </div>
+                <button class="carrito-acciones-comprar">COMPRAR AHORA</button>
+            </div>
+        </div>
+
+        <p class="carrito-comprado disabled">Muchas Gracias por tu compra. <ion-icon name="happy-outline"></ion-icon></p>
+        
+    </div>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
